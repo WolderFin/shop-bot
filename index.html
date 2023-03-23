@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Главная страница</title>
+</head>
+<body class="bg-dark text-muted">
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#create-bot" class="nav-link">Создание бота в Telegram</a></li>
+                <li class="nav-item"><a href="#reg-to-site" class="nav-link">Регистрация на сайте, для создания магазина</a></li>
+                <li class="nav-item"><a href="#func" class="nav-link">Разбор функций сайта</a></li>
+                <li class="nav-item"><a href="#brain" class="nav-link">Создание “Мозгов” для магазина</a></li>
+            </ul>
+        </header>
+        <main>
+            
+            <h1 class="lead">Структура статьи</h1>
+            <ol>
+                <li>Создание бота в Telegram.</li>
+                <li>Регистрация на сайте, для создания магазина.</li>
+                <li>Разбор функций сайта.</li>
+                <li>Создание “Мозгов” для магазина</li>
+            </ol>
+            <div id="create-bot">
+                <h1 class="lead">Создание бота в Telegram.</h1>
+                <p>Для того, чтобы наш магазин работал 24/7 нам нужно создать бота.</p>
+                <ol>
+                    <li>Переходим в мессенджер Telegram. Если у вас его нет, то нужно скачать. Наш магазин можно создать через смартфон, либо через персональный компьютер.</li>
+                    <li>В строке поиска вводим “@BotFather”.</li>
+                    <img src="https://i.imgur.com/0XvVRsJ.png" class="img-fluid" alt="...">
+                    <li>Пишем команду боту “/start” и ждем ответа от бота.</li>
+                    <img src="https://i.imgur.com/YCsBFMo.png" class="img-fluid" alt="...">
+                    <li>После того, как бот нам ответил, мы видим множество функций, нам нужно написать “/newbot”</li>
+                    <img src="https://i.imgur.com/TU3WbDr.png" class="img-fluid" alt="...">
+                    <li>Теперь нам нужно придумать имя для бота. Я же назову его “OberShop”.</li>
+                    <img src="https://i.imgur.com/t0fN6Pl.png" class="img-fluid" alt="...">
+                    <li>Дальше нам нужно придумать адрес бота, чтобы другие пользователи могли найти ваш магазин. Для примера выбрал адрес “testobershop_bot”. Обязательно после адреса указывайте “_bot”.</li>
+                    <img src="https://i.imgur.com/Wb0ic2m.png" class="img-fluid" alt="...">
+                </ol>
+                <p>Если вы сделали всё правильно, то у вас появится такое сообщение. Из /того сообщения нам нужно скопировать token бота. Что такое “Токен” ? Токен предназначен для электронного удостоверения личности.</p>
+                <img src="https://i.imgur.com/TXpEFSu.png" class="img-fluid" alt="...">
+            </div>
+            
+            <div id="reg-to-site">
+                <h1 class="lead">Регистрация на сайте, для создания магазина.</h1>
+                <p>Основную работу мы выполнили, получив токен бота, теперь нам нужно зарегистрироваться на сайте. Мы будем использовать сайт “Tbiz”, он предоставляет 3 дня бесплатного использования магазина, дальше будет платно. За 3 дня можно понять нужен ли вам такой магазин или нет.</p>
+                <ol>
+                    <li>Переходим на <a href="https://tbiz.pro/login">сайт</a></li>
+                    <li>Дальше нажимаем на текст “Создать аккаунт”</li>
+                    <img src="https://i.imgur.com/KTemNVx.png" class="img-fluid" alt="...">
+                    <li>Вписываем все необходимые данные, и ставим все галочки. И нажимаем на кнопку “Зарегистрироваться”.</li>
+                    <img src="https://i.imgur.com/zbcfpV2.png" class="img-fluid" alt="...">
+                    <li>После того, как успешно зарегистрировались, нас перенаправляет в панель управления. В верхнем левом углу нажимаем кнопку “Создать Магазин”.</li>
+                    <img src="https://i.imgur.com/9Wmekpj.png" class="img-fluid" alt="...">
+                    <li>У нас появилось окно “Новый магазин”. В строку вставляем Токен нашего бота.</li>
+                    <img src="https://i.imgur.com/FiEx8xr.png" class="img-fluid" alt="...">
+                    <p>Если вы сделали всё правильно, то у вас появляется “Конструктор”. В верхнем левом углу, мы видим адрес нашего бота, если он у вас не высвечивается - это означает, что вы допустили ошибку и вас следует перепроверить токен.</p>
+                </ol>
+            </div>
+            
+            <div id="func">
+                <h1 class="lead">Разбор функций сайта.</h1>
+                <ol>
+                    <li>Заказы - в этом разделе мы будем видеть, кто купил наш товар.</li>
+                    <img src="https://i.imgur.com/qZOolvx.png" class="img-fluid" alt="...">
+                    <li>Товары - в этом разделе мы будем видеть, какие у нас есть товары.</li>
+                    <img src="https://i.imgur.com/pixil8V.png" class="img-fluid" alt="...">
+                    <li>Пользователи - в этом разделе мы будем видеть, кто использует наш магазин.</li>
+                    <img src="https://i.imgur.com/2Oy76zm.png" class="img-fluid" alt="...">
+                    <li>Рассылки - Тут мы может выбрать пользователей нашего магазина и выполнить рассылку.</li>
+                    <img src="https://i.imgur.com/9udyB0y.png" class="img-fluid" alt="...">
+                    <li>Продвижение - в этом разделе у нас появится окно со способами продвижения.</li>
+                    <img src="https://i.imgur.com/v05HDVq.png" class="img-fluid" alt="...">
+                    <li>Реф. программа - Здесь мы можем создать бонусы для покупателей.</li>
+                    <img src="https://i.imgur.com/CoEpg0m.png" class="img-fluid" alt="...">
+                    <li>Настройки магазина - Здесь мы может полностью настроить наш магазин.</li>
+                    <img src="https://i.imgur.com/g3LoIi5.png" class="img-fluid" alt="...">
+                    <li>Настройка оплаты - в этом разделе мы будем указывать наши реквизиты.</li>
+                    <img src="https://i.imgur.com/ZNBYjYW.png" class="img-fluid" alt="...">
+                </ol>
+            </div>
+            
+
+            <div id="brain">
+                <h1 class="lead">Создание “Мозгов” для магазина</h1>
+                <ol>
+                    <li>Переходим в раздел <a href="https://tbiz.pro/settings/constructor">“Конструтор”</a></li>
+                    <img src="https://i.imgur.com/FrpkhhB.png" class="img-fluid" alt="...">
+                    <li>В левом половине сайта, мы видим поле для “Приветствия”. Я указал краткое приветствие для покупателя.</li>
+                    <img src="https://i.imgur.com/zgJcI5f.png" class="img-fluid" alt="..."> 
+                    <li>В правой половине сайта, мы видим поле с кнопками. Для того, чтобы добавить свою кнопку нужно нажать “Добавить кнопку”.</li>
+                    <li>У нас появляется окно для ввода данных для кнопки. Я написал краткую информацию.</li>
+                    <img src="https://i.imgur.com/CIIhfUX.png" class="img-fluid" alt="...">
+                    <li>Переходим в раздел <a href="https://tbiz.pro/goods ">“Товары”</a></li>
+                    <li>В верхнем правом углу нажимаем “Добавить товар”.</li>
+                    <img src="https://i.imgur.com/iHhFUT0.png" class="img-fluid" alt="...">
+                    <li>Тут указываем все необходимые данные и нажимаем “Добавить товар”.</li>
+                    <img src="https://i.imgur.com/ZAuHfbN.png" class="img-fluid" alt="...">
+                    <li>Видим, что всё успешно создалось, теперь загружаем материал. Материал у нас появится после оплаты товара.</li>
+                    <img src="https://i.imgur.com/d08LJvw.png" class="img-fluid" alt="...">
+                    <li>В появившемся окне указываем необходимые данные.</li>
+                    <img src="https://i.imgur.com/hJe0WWK.png" class="img-fluid" alt="...">
+                    <li>Переходим в раздел <a href="https://tbiz.pro/settings/methods_pay">“Настройка оплаты”</a>.</li>
+                    <li>Видим, что нужен секретный ключ киви. Важно нам нужно только указать “Просмотр истории платежей”.</li>
+                    <img src="https://i.imgur.com/ZNBYjYW.png" class="img-fluid" alt="...">
+                    <li>Переходим по <a href="https://qiwi.com/api">ссылке</a>.</li>
+                    <li>И нажимаем кнопку выпустить новый токен. Тут ставим галочку только “Просмотр истории платежей”.</li>
+                    <img src="https://i.imgur.com/LAYUt56.png" class="img-fluid" alt="...">
+                    <li>Копируем наш токен в киви и вставляем его в поля “Настройка оплаты”. И сохраняем.</li>
+                    <img src="https://i.imgur.com/aIL6mtT.png" class="img-fluid" alt="...">
+    
+                </ol>
+            </div>
+            <p class="text-center">Спасибо за прочтение статьи!</p>
+            <p class="text-center">По вопросам обращаться: <a href="mailto:ceva6649@gmail.com">ceva6649@gmail.com</a></p>
+        </main>
+    </div>
+</body>
+</html>
